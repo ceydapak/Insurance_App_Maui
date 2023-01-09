@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="end_project.PatientsRegister"
+             Title="Register">
+    <ScrollView>
+    <StackLayout Padding="40" >
+           <StackLayout Orientation="Vertical" HorizontalOptions="Center" >
+            <VerticalStackLayout>
+                <Label Text="Name and Surname"/>
+                <Entry x:Name="pname" WidthRequest="200" HorizontalOptions="Start"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout>
+                <Label Text="Adress"/>
+                <Entry x:Name="padd" WidthRequest="200" HeightRequest="100" HorizontalOptions="Start"/>
+            </VerticalStackLayout>
+            <HorizontalStackLayout>
+                <VerticalStackLayout Margin="10">
+                    <Label Text="BirthDate"/>
+                    <DatePicker  x:Name="pdate" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Margin="10">
+                    <Label Text="Phone"/>
+                    <Entry  x:Name="pphone" />
+                </VerticalStackLayout>
+
+
+                <VerticalStackLayout Margin="10">
+                    <Picker x:Name="picker" Title="Your Insurance Company"/>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+
+
+            <Button x:Name="PSave_Btn" Text="Save"  WidthRequest="100" Clicked="PSave_Btn_Clicked"/>
+
+        </StackLayout>
+
+            <HorizontalStackLayout Margin="5">
+                <Label Text="patient " Padding="0,0,5,0"/>
+                <Label x:Name="label" FontAttributes="Bold" />
+                <Label Text=" is saved successfully." Padding="0,0,0,5"/>
+            </HorizontalStackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

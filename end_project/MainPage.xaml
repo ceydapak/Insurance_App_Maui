@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="end_project.MainPage"
+             Title="Home">
+
+    <ScrollView>
+        <StackLayout>
+            <VerticalStackLayout HorizontalOptions="Center">
+            <Label Text="Welcome to our system!" FontSize="30" FontAttributes="Bold" Padding="50"/>
+                <VerticalStackLayout  HorizontalOptions="Center" > 
+                    <Label Text="If you are a patient, please register." FontSize="Micro" Padding="10"/>
+                     <Button Text="Register" x:Name="btn_register" Clicked="btn_register_Clicked" WidthRequest="100"/>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

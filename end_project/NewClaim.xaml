@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="end_project.NewClaim"
+             Title="New Claim" >
+    
+    <StackLayout Padding="40" >
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center" >
+            <VerticalStackLayout>
+                <Picker x:Name="p" Title="For Representive"/>
+            </VerticalStackLayout>
+            <HorizontalStackLayout>
+                <VerticalStackLayout Margin="10">
+                    <Label Text="Date"/>
+                    <DatePicker  x:Name="cdate" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Margin="10">
+                    <Label Text="Cost"/>
+                    <Entry  x:Name="Cost" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+
+
+            <Button x:Name="Send_Btn" Text="Send"  WidthRequest="100" Clicked="Send_Btn_Clicked"/>
+
+        </StackLayout>
+        <HorizontalStackLayout Margin="5">
+            <Label Text="Claim " Padding="0,0,5,0"/>
+            <Label x:Name="label" FontAttributes="Bold" />
+            <Label Text=" is saved successfully." Padding="0,0,0,5"/>
+        </HorizontalStackLayout>
+                
+    </StackLayout>
+</ContentPage>

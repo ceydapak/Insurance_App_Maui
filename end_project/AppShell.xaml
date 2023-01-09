@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="end_project.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:end_project"
+    >
+    
+    <FlyoutItem Title="Home"
+                Icon="home.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Visits"
+                Icon="visit.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:Visits}" Route="Visits" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="New Claim"
+                Icon="claim.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:NewClaim}" Route="NewClaim" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Doctors"
+                Icon="doctor.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:Doctors}" Route="Doctors" />
+        </Tab>
+    </FlyoutItem>
+    <!--<FlyoutItem Title="Insurance Company Detail"
+                Icon="insurance.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:Company}" Route="Company" />
+        </Tab>
+    </FlyoutItem>-->
+
+    <FlyoutItem Title="Patient Register"
+                Icon="edit.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:PatientsRegister}" Route="PatientsRegister" />
+        </Tab>
+    </FlyoutItem>
+
+
+</Shell>
